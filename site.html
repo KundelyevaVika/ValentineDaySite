@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мой первый сайт</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #7b2cbf, #c77dff);
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #7b2cbf;
+      color: white;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: #5a189a;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Привет 👋</h1>
+    <p>Это мой сайт с кнопкой</p>
+    <button onclick="sayHello()">Нажми меня</button>
+  </div>
+
+  <script>
+    function sayHello() {
+      alert('Кнопка работает! 🎉');
+    }
+  </script>
+</body>
+</html>
